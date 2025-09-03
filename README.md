@@ -1,4 +1,4 @@
-#🔹 Phase Ambiguity Resolution with Differential Decoding
+# Phase Ambiguity Resolution with Differential Decoding
 
 In QPSK, carrier recovery cannot determine the absolute phase of the constellation. This means the received constellation can be rotated by 0°, 90°, 180°, or 270° without the receiver knowing. This is called phase ambiguity.
 
@@ -21,11 +21,11 @@ At the receiver, the differential decoder compares the current symbol (
 The logic in your Verilog (differential_decoder) uses a state machine / lookup table that maps these phase differences back to data bits 
 (
 𝑏
-2
+
 𝑘
 ,
 𝑏
-2
+
 𝑘
 +
 1
