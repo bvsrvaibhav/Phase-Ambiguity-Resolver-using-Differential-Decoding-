@@ -38,7 +38,7 @@ Because decisions are based on relative phase, a constant constellation rotation
 
 ❌ Trade-off: Slightly higher error rate in noisy channels (since errors propagate over consecutive symbols).
 
-🔹 Unique Word (UW) Method
+# Unique Word (UW) Method
 
 Another approach to resolve phase ambiguity is to transmit a known symbol sequence (unique word) at the start of a frame:
 
@@ -52,7 +52,7 @@ Once the rotation is known, all subsequent symbols are corrected accordingly.
 
 ❌ Trade-off: Requires additional overhead (extra bits per frame).
 
-🔹 Key Difference
+# Key Difference
 
 Differential Decoding → Works continuously, no special sequence required. Ideal for streaming data, but errors can spread across symbols.
 
