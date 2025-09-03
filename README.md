@@ -14,13 +14,7 @@ At the receiver, the differential decoder compares the current symbol (
 𝑘
 +
 1
-δ
-k
-	​
-
-,δ
-k+1
-	​
+​
 
 ) with the previous one.
 
@@ -36,15 +30,7 @@ The logic in your Verilog (differential_decoder) uses a state machine / lookup t
 +
 1
 )
-(b
-2k
-	​
-
-,b
-2k+1
-	​
-
-).
+.
 
 Because decisions are based on relative phase, a constant constellation rotation (e.g., 90°) does not break decoding.
 
