@@ -35,6 +35,7 @@ The logic in your Verilog (differential_decoder) uses a state machine / lookup t
 Because decisions are based on relative phase, a constant constellation rotation (e.g., 90°) does not break decoding.
 
 ✅ Advantage: Robust to unknown phase shifts.
+
 ❌ Trade-off: Slightly higher error rate in noisy channels (since errors propagate over consecutive symbols).
 
 🔹 Unique Word (UW) Method
@@ -48,6 +49,7 @@ From this, it can estimate the constellation rotation (0°, 90°, 180°, or 270�
 Once the rotation is known, all subsequent symbols are corrected accordingly.
 
 ✅ Advantage: No error propagation; works well when frames are available.
+
 ❌ Trade-off: Requires additional overhead (extra bits per frame).
 
 🔹 Key Difference
